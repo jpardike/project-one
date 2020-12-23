@@ -1,14 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-@font-face {
-  font-family: Clip;
-  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
 }
        
 h1 {
@@ -21,7 +16,7 @@ h1 {
   letter-spacing: 2;
   left: 50%;
   top: 5%;
-  font-family: "Clip";
+  font-family: 'Raleway', sans-serif;
   font-size: 3.5em;
   color: #ffe6ff;
 } 
@@ -33,7 +28,7 @@ h2 {
 
 body {
   font-size: 16px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Raleway', sans-serif;
   background:  url('../Images/pexels-trushotz-3635300_adjustment-one.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -120,7 +115,7 @@ list-style: none;
 #sign-up {
   background-color: black;
   color:#ffe6ff;
-  font-family: Clip;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   position: relative;
   top:35%;
@@ -134,7 +129,7 @@ list-style: none;
 #search-btn {
   background-color: black;
   color:#ffe6ff;
-  font-family: Clip;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   outline:none;
 }
