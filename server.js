@@ -4,7 +4,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const methodOverride = require('method-override');
-const session = require('express-session');
+// const session = require('express-session');
 
 require('dotenv').config();
 const PORT = process.env.PORT || 4000;
@@ -25,14 +25,14 @@ const ctrl = require('./controllers');
 // -----------Middleware
 
 // Express Session
-app.use(session({
-  secret: process.env.SESSION_SECRET,
-  resave: false,
-  saveUninitialized: false,
-  cookie: {
-    maxAge: 1000 * 60 * 60 * 24 * 7 * 2
-  }
-}));
+// app.use(session({
+//   secret: process.env.SESSION_SECRET,
+//   resave: false,
+//   saveUninitialized: false,
+//   cookie: {
+//     maxAge: 1000 * 60 * 60 * 24 * 7 * 2
+//   }
+// }));
 
 // body parser
 app.use(bodyParser.urlencoded({extended: false}));
