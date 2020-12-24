@@ -4,23 +4,25 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
     "method-override": "^3.0.0",
     "mongoose": "^5.10.9",
     "morgan": "^1.10.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://git.generalassemb.ly/morganjaouni/ProjectOne.git"
+    "url": "https://github.com/jpardike/project-one"
   },
-  "author": "",
+  "author": "Joshua Pardike",
   "license": "ISC"
 }
