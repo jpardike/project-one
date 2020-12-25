@@ -40,13 +40,6 @@ body {
   overflow: hidden;
 }
 
-.nav-bar {
-  position: absolute;
-  top:0%;
-  min-height: 25%;
-  width: 7%;
-}
-
 .navbar-links {
   color: #ffe6ff;
 }
