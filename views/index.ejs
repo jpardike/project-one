@@ -3,23 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <%- include('./partials/head-contents')  %>
+    <%- include('./partials/head-contents') %>
     <!-- Main JS -->
     <script defer src="/scripts/app.js"></script>
   </head>
 
   <body class="container-fluid p-0 m-0">
+    <%- include('./partials/navbar') %>
 
-    <%- include('./partials/navbar') %> 
-   
-    <main>
-      <section class="row p-0 m-0">
-        <h1>Welcome to Tianguis</h1>
-        <h2>Your home for buying and selling!</h2>
+    <main class="home-main">
+      <section
+        class="row p-0 m-0 justify-content-center align-items-center home-title-section"
+      >
+        <div class="col text-center">
+          <h1>Welcome to Tianguis</h1>
+          <h2>Your home for buying and selling!</h2>
+        </div>
       </section>
     </main>
 
-    <%- include('./partials/footer') %> 
-
+    <%- include('./partials/footer') %>
   </body>
 </html>
