@@ -5,51 +5,40 @@
   padding: 0;
   box-sizing: border-box;
 }
-       
-h1 {
-  position: absolute;                      
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  transform: translate(-50%, -50%);
-  letter-spacing: 2;
-  left: 50%;
-  top: 5%;
-  font-family: 'Raleway', sans-serif;
-  font-size: 3.5em;
-  color: #ffe6ff;
-} 
-
-  
-h2 {
-  color:#ffe6ff;
-}
 
 body {
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
-  background:  url('../Images/white-and-grey.jpg');
+  background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url('../Images/white-and-grey.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  color: #ffe6ff;
+  color: rgb(2,55,86);
   height: 100vh;
   width: 100vw;
   padding: 0;
   margin: 0;
   overflow: hidden;
 }
+       
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.5em;
+  color: rgb(2,55,86);
+} 
+
+  
+h2 {
+  color:rgb(2,55,86);
+}
+
+
 
 .navbar-links {
-  color: #ffe6ff;
+  color: rgb(2,55,86);
 }
 
 .navbar-links:hover{
-color: #ffe6ff;
-}
-
-.nav-items {
-list-style: none;                 
+color: rgb(2,55,86);
 }
 
 .btn {
