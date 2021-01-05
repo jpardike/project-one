@@ -28,6 +28,13 @@ h2 {
   color:rgb(2,55,86);
 }
 
+/* Navbar Styles */
+
+.navbar {
+  position: fixed;
+  width: 100vw;
+}
+
 .navbar-links {
   color: rgb(2,55,86);
 }
@@ -36,13 +43,15 @@ h2 {
 color: rgb(2,55,86);
 }
 
+/* ----------------- Index Page ------------------ */
+
 .home-main {
   width: 100%;
-  height: 50%;
+  height: 100%;
 }
 
 .home-title-section {
-  height: 100%;
+  height: 50%;
   width: 100%;
 } 
 
@@ -52,6 +61,36 @@ color: rgb(2,55,86);
 
 .home-title-h2 {
   display: block;
+}
+
+.home-button-section {
+  width: 100%;
+  height: 50%;
+}
+
+.home-anchors {
+  margin: 0 25px 0 25px;
+}
+
+.home-buttons {
+  background-color: #326173;
+  color: #F2EFDF;
+  font-size: 1em;
+  width: 100px;
+  height: 40px;
+  border: #326173;
+  border-radius: 5%;
+}
+
+.home-anchors:hover {
+  margin: 0 20px 0 20px;
+}
+
+.home-buttons:hover {
+  font-size: 1.2em;
+  width: 110px;
+  height: 50px;
+  border: #6C868C;
 }
 
 .btn {
