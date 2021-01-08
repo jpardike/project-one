@@ -35,13 +35,13 @@ h2 {
   width: 100vw;
 }
 
-.navbar-links {
+#nav-text {
   color: rgb(2,55,86);
 }
 
-.navbar-links:hover{
+/* .nav-link:hover{
 color: rgb(2,55,86);
-}
+} */
 
 /* ----------------- Index Page ------------------ */
 
