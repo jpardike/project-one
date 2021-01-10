@@ -30,6 +30,10 @@ h2 {
 
 /* Navbar Styles */
 
+nav {
+  z-index: 99;
+}
+
 .navbar {
   position: fixed;
   width: 100vw;
