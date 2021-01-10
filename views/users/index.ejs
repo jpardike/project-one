@@ -5,28 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <%- include('../partials/head-contents') %>
     <!-- u-index CSS -->
-    <link rel="stylesheet" href="styles/u-index.css">
+    <link rel="stylesheet" href="styles/u-index.css" />
   </head>
-  <body>
-    
-    <header>
-      <h1 class="text-center">Current Sellers</h1>
-    </header>
-
+  <body class="container-fluid p-0 m-0">
     <%- include('../partials/navbar') %>
 
-
-    <main class="seller-div">
-      <ul class="sellers-items">
-        <% for(let i = 0; i < users.length; i++) { %> 
-        <li>
-          <a class="sellers-anchor" href="/users/<%= users[i].id %>"><%= users[i].name %> </a>
-        </li>
-        <% } %>
-      </ul>
+    <main>
+      <section class="row p-0 m-0 justify-content-center align-items-center">
+        <div class="col text-center">
+          <h1 class="user-index-h1">Current Sellers</h1>
+          <ul>
+            <% for(let i = 0; i < users.length; i++) { %>
+            <li class="users-li">
+              <a class="users" href="/users/<%= users[i].id %>"
+                ><%= users[i].name %>
+              </a>
+            </li>
+            <% } %>
+          </ul>
+        </div>
+      </section>
     </main>
 
-    <%- include('../partials/footer') %> 
-
+    <%- include('../partials/footer') %>
   </body>
 </html>
