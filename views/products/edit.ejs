@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="/styles/p-edit.css">
   </head>
   <body>
+    <%- include('../partials/navbar') %>
 
     <header class="row justify-content-center">
       <h1>Update Listing</h1>
     </header>
 
-    <%- include('../partials/navbar') %>
 
     <form class="edit-box" action="/products/<%= product.id %>?_method=PUT" method="POST">
       <div class="input-containers">
