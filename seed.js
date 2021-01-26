@@ -4,28 +4,28 @@ const db = require('./models');
 // Seed user data
 const users = [
   {
-    name: 'Ashley, Smith',
+    name: 'Ashley Smith',
     userName: 'ashley01',
     password: 'coldhands',
-    location: 'Anchorage',
+    location: 'Anchorage, Alaska',
   },
   {
     name: 'Jake Claw',
     userName: 'j-claw',
     password: 'redblanket',
-    location: 'Milwaukee',
+    location: 'Milwaukee, Wisconsin',
   },
   {
     name: 'Kathy Burgs',
     userName: 'katburg',
     password: 'bumpyroad',
-    location: 'Toronto',
+    location: 'Toronto, Canada',
   },
   {
     name: 'Bruce Leroy',
     userName: 'the-bruce',
     password: 'lastdragon',
-    location: 'New York City',
+    location: 'New York City, New York',
   },
   {
     name: 'Captain Romano',
