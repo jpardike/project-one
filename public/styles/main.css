@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
 
 * {
   margin: 0;
@@ -8,24 +8,28 @@
 
 body {
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
-  background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url('../Images/white-and-grey.jpg');
+  font-family: "Raleway", sans-serif;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../Images/white-and-grey.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  color: rgb(2,55,86);
+  color: rgb(2, 55, 86);
   height: 100vh;
   width: 100vw;
   padding: 0;
   margin: 0;
 }
-       
+
 h1 {
   font-size: 3.5em;
-  color: rgb(2,55,86);
-} 
+  color: rgb(2, 55, 86);
+}
 
 h2 {
-  color:rgb(2,55,86);
+  color: rgb(2, 55, 86);
 }
 
 /* Navbar Styles */
@@ -40,7 +44,7 @@ nav {
 }
 
 #nav-text {
-  color: rgb(2,55,86);
+  color: rgb(2, 55, 86);
 }
 
 /* .nav-link:hover{
@@ -57,7 +61,7 @@ color: rgb(2,55,86);
 .home-title-section {
   height: 50%;
   width: 100%;
-} 
+}
 
 .home-title-h1 {
   display: block;
@@ -78,7 +82,7 @@ color: rgb(2,55,86);
 
 .home-buttons {
   background-color: #326173;
-  color: #F2EFDF;
+  color: #f2efdf;
   font-size: 1em;
   width: 100px;
   height: 40px;
@@ -94,11 +98,11 @@ color: rgb(2,55,86);
   font-size: 1.2em;
   width: 110px;
   height: 50px;
-  border: #6C868C;
+  border: #6c868c;
 }
 
 .btn {
-  background:  #ffe6ff;
+  background: #ffe6ff;
 }
 
 .button-text {
@@ -107,33 +111,33 @@ color: rgb(2,55,86);
 
 .button-text:hover {
   text-decoration: none;
-  color:#0e153a;
+  color: #0e153a;
 }
 
 .user {
-    width: 65%;
-    min-height:40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2%;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: transform .3s linear;
+  width: 65%;
+  min-height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s linear;
 }
 
 #search-btn {
   background-color: black;
-  color:#ffe6ff;
-  font-family: 'Raleway', sans-serif;
+  color: #ffe6ff;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
-  outline:none;
+  outline: none;
 }
 
 .form-items {
-  width:100%
+  width: 100%;
 }
 
 .text-input {
