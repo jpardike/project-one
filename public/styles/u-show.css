@@ -1,3 +1,48 @@
 .show-user-h1 {
   margin: 100px auto;
 }
+
+.show-user-info-p {
+  padding: 10px;
+}
+
+.show-user-info-span {
+  font-weight: 700;
+}
+
+.show-user-map {
+  padding: 10px;
+  width: 60%;
+  height: 60%;
+}
+
+.show-user-h3 {
+  margin-bottom: 50px;
+}
+
+.show-user-listings {
+  list-style: none;
+  padding: 10px;
+}
+
+.show-user-listings-anchors {
+  color: rgb(2, 55, 86);
+}
+
+.show-user-listings-anchors:hover {
+  color: rgb(2, 55, 86);
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.show-user-listings-btn-anchor,
+.show-user-del-edit-btn {
+  color: rgb(2, 55, 86);
+}
+
+.show-user-listings-btn-anchor:hover,
+.show-user-del-edit-btn:hover {
+  color: rgb(2, 55, 86);
+  text-decoration: none;
+  font-size: 1.1em;
+}
