@@ -16,11 +16,17 @@ body {
     url("../Images/white-and-grey.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   color: rgb(2, 55, 86);
   height: 100vh;
   width: 100vw;
   padding: 0;
   margin: 0;
+}
+
+main {
+  min-height: 100%;
+  margin-bottom: -30px;
 }
 
 h1 {
@@ -73,7 +79,7 @@ color: rgb(2,55,86);
 
 .home-button-section {
   width: 100%;
-  height: 50%;
+  height: 40%;
 }
 
 .home-anchors {
@@ -150,13 +156,15 @@ color: rgb(2,55,86);
   outline: none;
 }
 
+.push {
+  height: 30px
+}
+
 footer {
-  height: 5%;
+  height: 30px;
   width: 100%;
   padding: 0;
   margin: 0;
-  position: absolute;
-  bottom: 0%;
 }
 
 .search-bar {
