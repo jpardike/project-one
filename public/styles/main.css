@@ -149,8 +149,8 @@ color: rgb(2,55,86);
 .text-input {
   width: 100%;
   margin: 8px;
-  color: #ffe6ff;
-  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb(2, 55, 86);
+  background-color: rgba(0, 0, 0, 0.1);
   border: none;
   border-bottom: solid 2px #ffe6ff;
   outline: none;

@@ -10,37 +10,40 @@
   <body>
     <%- include('../partials/navbar') %> 
 
-    <header class="row justify-content-center">
-      <h1>Update Profile</h1>
-    </header>
+    <main>
+      <div class="row p-0 m-0 justify-content-center">
+        <h1 class="edit-user-h1">Update Profile</h1>
+      </div>
 
+      <section class="row p-0 m-0 justify-content-center">
+        <form class="edit-user-form" action="/users/<%= user.id %>?_method=PUT" method="POST">
+
+          <div>
+            <label for="name">Name:</label>
+            <input class="text-input" id="name" name="name" type="text" value="<%= user.name %>"></input>
+          </div>
     
-    <form class="edit-box" action="/users/<%= user.id %>?_method=PUT" method="POST">
-
-      <div>
-        <label for="name">Name: </label>
-        <input class="text-input" id="name" name="name" type="text" value="<%= user.name %>"></input>
-      </div>
-
-      <div>
-        <label for="userName">Username: </label>
-        <input class="text-input" id="userName" name="userName" type="text" value="<%= user.userName %>"></input>
-      </div>
-
-      <div>
-        <label for="password">Password: </label>
-        <input class="text-input" id="password" name="password" type="text" value="<%= user.password %>"></input>
-      </div>
-
-      <div>
-        <label for="location">Location: </label>
-        <input class="text-input" id="location" name="location" type="text" value="<%= user.location %>"></input>
-      </div>
-
-      <button class="btn mt-3" type="submit">Update</button>
-    </form>
+          <div>
+            <label for="userName">Username:</label>
+            <input class="text-input" id="userName" name="userName" type="text" value="<%= user.userName %>"></input>
+          </div>
+    
+          <div>
+            <label for="password">Password:</label>
+            <input class="text-input" id="password" name="password" type="text" value="<%= user.password %>"></input>
+          </div>
+    
+          <div>
+            <label for="location">Location:</label>
+            <input class="text-input" id="location" name="location" type="text" value="<%= user.location %>"></input>
+          </div>
+    
+          <button class="btn mt-3" type="submit">Update</button>
+        </form>
+      </section>
+      <div class="push"></div>
+    </main>
 
     <%- include('../partials/footer') %> 
-
   </body>
 </html>
