@@ -1,0 +1,30 @@
+.show-product-h1 {
+  margin: 100px auto;
+}
+
+.show-product-info {
+  padding: 10px 25px;
+  margin: 0;
+}
+
+.show-product-map {
+  min-width: 100%;
+  height: 50%;
+  padding: 10px 25px;
+  margin: 0;
+}
+
+.show-product-delete {
+  display: inline-block;
+  padding: 10px 20px 10px 25px;
+}
+
+.show-product-edit {
+  display: inline-block;
+  padding: 10px 25px 10px 0;
+}
+
+.show-product-img {
+  max-height: 450px;
+  padding: 25px;
+}
