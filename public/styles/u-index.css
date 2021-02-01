@@ -1,19 +1,19 @@
 .user-index-h1 {
-    margin: 130px 30px 65px 30px;
+  margin: 130px 30px 65px 30px;
 }
 
 .users-li {
-    list-style: none;
-    padding: 15px;
+  list-style: none;
+  padding: 15px;
 }
 
 .users {
-    font-size: 2em;
-    color: rgb(2,55,86);
+  font-size: 2em;
+  color: rgb(2, 55, 86);
 }
 
 .users:hover {
-    font-size: 2.1em;
-    color: rgb(2,55,86);
-    text-decoration: none;
+  font-size: 2.1em;
+  color: rgb(2, 55, 86);
+  text-decoration: none;
 }
