@@ -5,41 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <%- include('../partials/head-contents') %>
     <!-- p-edit CSS -->
-    <link rel="stylesheet" href="/styles/p-edit.css">
+    <link rel="stylesheet" href="/styles/p-edit.css" />
   </head>
-  <body>
+  <body class="container-fluid p-0 m-0">
     <%- include('../partials/navbar') %>
 
-    <header class="row justify-content-center">
-      <h1>Update Listing</h1>
-    </header>
-
-
-    <form class="edit-box" action="/products/<%= product.id %>?_method=PUT" method="POST">
-      <div class="input-containers">
-        <label for="type">For Sale: </label>
-        <input class="text-input" type="text" name="type" value="<%= product.type %>" />
+    <main>
+      <div class="row p-0 m-0 justify-content-center">
+        <h1 class="edit-product-h1">Update Listing</h1>
       </div>
 
-      <div class="input-containers">
-        <label for="price">Price: </label>
-        <input class="text-input" type="text" name="price" value="<%= product.price %>" />
-      </div>
+      <section class="row p-0 m-0 justify-content-center">
+        <form class="edit-product-form" action="/products/<%= product.id %>?_method=PUT" method="POST">
+          <div>
+            <label for="type">For Sale: </label>
+            <input
+              class="text-input"
+              type="text"
+              name="type"
+              value="<%= product.type %>"
+            />
+          </div>
 
-      <div class="input-containers">
-        <label for="condition">Condition: </label>
-        <input class="text-input" type="text" name="condition" value="<%= product.condition %>" />
-      </div>
+          <div>
+            <label for="price">Price: </label>
+            <input
+              class="text-input"
+              type="text"
+              name="price"
+              value="<%= product.price %>"
+            />
+          </div>
 
-      <div class="input-containers">
-        <label for="image">Image: </label>
-        <input class="text-input" type="text" name="image" value="<%= product.image %>" />
-      </div>
+          <div>
+            <label for="condition">Condition: </label>
+            <input
+              class="text-input"
+              type="text"
+              name="condition"
+              value="<%= product.condition %>"
+            />
+          </div>
 
-      <input class="btn mt-3" type="submit" />
-    </form>
+          <div>
+            <label for="image">Image URL: </label>
+            <input
+              class="text-input"
+              type="text"
+              name="image"
+              value="<%= product.image %>"
+            />
+          </div>
 
-    <%- include('../partials/footer') %> 
-    
+          <input class="btn edit-product-submit" type="submit" />
+        </form>
+      </section>
+
+      <div class="push"></div>
+    </main>
+
+    <%- include('../partials/footer') %>
   </body>
 </html>
