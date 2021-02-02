@@ -1,0 +1,16 @@
+.edit-product-h1 {
+  margin: 100px auto;
+}
+
+.edit-product-form {
+  width: 50%;
+}
+
+.edit-product-submit {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.edit-product-submit:hover {
+  font-size: 1.1em;
+}
