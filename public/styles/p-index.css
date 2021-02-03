@@ -1,28 +1,19 @@
-h1 {
-    color:#ffe6ff;
+.products-h1 {
+  margin: 100px auto;
 }
 
-.listing-div {
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 70px auto;
-    padding: 30px;
-    color:#ffe6ff;
-    width: 65%;
-    min-height: 80%;
-    border-radius: 2%;
+.products-list-items {
+  list-style: none;
+  padding: 15px;
 }
 
-.list-items {
-    color: #ffe6ff;
-    font-size: 22px;
-    
-}
-.list-anchor {
-    color: #ffe6ff;
-    font-size: 22px;
-    line-height: 70px;
+.products {
+  font-size: 2em;
+  color: rgb(2, 55, 86);
 }
 
-.list-anchor:hover{
-    color:#ffe6ff;
-    }
+.products:hover {
+  font-size: 2.1em;
+  color: rgb(2, 55, 86);
+  text-decoration: none;
+}

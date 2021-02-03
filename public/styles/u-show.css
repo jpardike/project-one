@@ -1,47 +1,48 @@
-h1 {
-  color: #ffe6ff;
+.show-user-h1 {
+  margin: 100px auto;
 }
 
-main {
-    position: relative;
-    background-color: rgba(0, 0, 0, .5);
-    margin: 70px auto;
-    padding: 30px;
-    color:#ffe6ff;
-    width: 65%;
-    min-height: 90%;
-    border-radius: 2%;
+.show-user-info-p {
+  padding: 10px;
 }
 
-.button-anchor {
-  color:#0e153a;
+.show-user-info-span {
+  font-weight: 700;
 }
 
-.button-anchor:hover {
-  color: #0e153a;
+.show-user-map {
+  padding: 10px;
+  width: 60%;
+  height: 60%;
+}
+
+.show-user-h3 {
+  margin-bottom: 50px;
+}
+
+.show-user-listings {
+  list-style: none;
+  padding: 10px;
+}
+
+.show-user-listings-anchors {
+  color: rgb(2, 55, 86);
+}
+
+.show-user-listings-anchors:hover {
+  color: rgb(2, 55, 86);
+  font-size: 1.1em;
   text-decoration: none;
 }
 
-.user-form-buttons {
-  display: inline;
+.show-user-listings-btn-anchor,
+.show-user-del-edit-btn {
+  color: rgb(2, 55, 86);
 }
 
-.user-products {
-  color:#ffe6ff;
-}
-
-.user-products:hover {
-  color:#ffe6ff;
-}
-
-p {
-  font-size: 18px;
-}
-
-.show-map {
-  position: absolute;
-  top: 25%;
-  right: 5%;
-  width: 50%;
-  height: 45%;
+.show-user-listings-btn-anchor:hover,
+.show-user-del-edit-btn:hover {
+  color: rgb(2, 55, 86);
+  text-decoration: none;
+  font-size: 1.1em;
 }

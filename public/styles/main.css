@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
 
 * {
   margin: 0;
@@ -6,66 +6,109 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: Clip;
-  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
-}
-       
-h1 {
-  position: absolute;                      
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  transform: translate(-50%, -50%);
-  letter-spacing: 2;
-  left: 50%;
-  top: 5%;
-  font-family: "Clip";
-  font-size: 3.5em;
-  color: #ffe6ff;
-} 
-
-  
-h2 {
-  color:#ffe6ff;
-}
-
 body {
   font-size: 16px;
-  font-family: 'Playfair Display', serif;
-  background:  url('../Images/pexels-trushotz-3635300_adjustment-one.jpg');
+  font-family: "Raleway", sans-serif;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../Images/white-and-grey.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  color: #ffe6ff;
+  background-attachment: fixed;
+  color: rgb(2, 55, 86);
   height: 100vh;
   width: 100vw;
   padding: 0;
   margin: 0;
-  overflow: hidden;
 }
 
-.nav-bar {
-  position: absolute;
-  top:0%;
-  min-height: 25%;
-  width: 7%;
+main {
+  min-height: 100%;
+  margin-bottom: -30px;
 }
 
-.navbar-links {
-  color: #ffe6ff;
+h1 {
+  font-size: 3.5em;
+  color: rgb(2, 55, 86);
 }
 
-.navbar-links:hover{
-color: #ffe6ff;
+h2 {
+  color: rgb(2, 55, 86);
 }
 
-.nav-items {
-list-style: none;                 
+/* Navbar Styles */
+
+nav {
+  z-index: 99;
+}
+
+.navbar {
+  position: fixed;
+  width: 100vw;
+}
+
+#nav-text {
+  color: rgb(2, 55, 86);
+}
+
+/* .nav-link:hover{
+color: rgb(2,55,86);
+} */
+
+/* ----------------- Index Page ------------------ */
+
+.home-main {
+  width: 100%;
+  height: 100%;
+}
+
+.home-title-section {
+  height: 50%;
+  width: 100%;
+}
+
+.home-title-h1 {
+  display: block;
+}
+
+.home-title-h2 {
+  display: block;
+}
+
+.home-button-section {
+  width: 100%;
+  height: 40%;
+}
+
+.home-anchors {
+  margin: 0 25px 0 25px;
+}
+
+.home-buttons {
+  background-color: #326173;
+  color: #f2efdf;
+  font-size: 1em;
+  width: 100px;
+  height: 40px;
+  border: #326173;
+  border-radius: 5%;
+}
+
+.home-anchors:hover {
+  margin: 0 20px 0 20px;
+}
+
+.home-buttons:hover {
+  font-size: 1.2em;
+  width: 110px;
+  height: 50px;
+  border: #6c868c;
 }
 
 .btn {
-  background:  #ffe6ff;
+  background: #ffe6ff;
 }
 
 .button-text {
@@ -74,92 +117,54 @@ list-style: none;
 
 .button-text:hover {
   text-decoration: none;
-  color:#0e153a;
+  color: #0e153a;
 }
 
 .user {
-    width: 65%;
-    min-height:40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2%;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: transform .3s linear;
-}
-
-.user-cover {
-  background: #ffe6ff;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  text-align: center;
-  line-height: 80px;
-  border-radius: 2%;
-  font-size: 1.6em;
-  transition: transform .7s ease-in-out;
-  z-index: 2;
-  overflow: hidden;
-}
-
-.sign-cover {
+  width: 65%;
+  min-height: 40%;
   display: flex;
-  flex-direction: column;
-  position: relative;
-  top:25%;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 30%;
-  margin: 0 auto;
-}
-
-#sign-up {
-  background-color: black;
-  color:#ffe6ff;
-  font-family: Clip;
-  font-weight: 700;
+  border-radius: 2%;
+  cursor: pointer;
   position: relative;
-  top:35%;
-  outline: none;
-}
-
-#sign-up:hover{
-  transform: scale(1.2);
+  overflow: hidden;
+  transition: transform 0.3s linear;
 }
 
 #search-btn {
   background-color: black;
-  color:#ffe6ff;
-  font-family: Clip;
+  color: #ffe6ff;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
-  outline:none;
+  outline: none;
 }
 
 .form-items {
-  width:100%
+  width: 100%;
 }
 
 .text-input {
   width: 100%;
   margin: 8px;
-  color: #ffe6ff;
-  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb(2, 55, 86);
+  background-color: rgba(0, 0, 0, 0.1);
   border: none;
   border-bottom: solid 2px #ffe6ff;
   outline: none;
 }
 
+.push {
+  height: 30px
+}
+
 footer {
-  height: 5%;
+  height: 30px;
   width: 100%;
   padding: 0;
   margin: 0;
-  position: absolute;
-  bottom: 0%;
 }
 
 .search-bar {

@@ -3,58 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <!-- Bootstrao -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="/styles/main.css">
+    <%- include('../partials/head-contents') %>
     <!-- p-show CSS -->
-    <link rel="stylesheet" href="/styles/p-show.css">
-    <title>Express List</title>
+    <link rel="stylesheet" href="/styles/p-show.css" />
   </head>
-  <body>
+  <body class="container-fluid p-0 m-0">
+    <%- include('../partials/navbar') %>
 
-    <header>
-      <h1 class="text-center">Product For Sale</h1>
-    </header>
+    <main>
+      <div class="row p-0 m-0 justify-content-center">
+        <h1 class="show-product-h1">Product For Sale</h1>
+      </div>
 
-    <%- include('../partials/navbar') %> 
-    <%- include('../partials/searchbar') %> 
-    
-    <main class="row product-container justify-content-start">
-      <div class="col">
-        <div class="row">
-          <a class="p-3 product-text user-name-link mt-5" href="/users/<%= product.user.id %>"><%= product.user.userName %> </a>   
-          <p class="p-3 product-text mt-5"><%= product.type %> </>
-          <p class="p-3 product-text mt-5"> $ <%= product.price %> </p>
-          
+      <div class="row p-0 m-0 justify-content-center">
+        <div class="col-md-4 p-3">
+          <p class="show-product-info">
+            <span>Name: </span> <%= product.type %>
+          </p>
+          <p class="show-product-info">
+            <span>Price: </span> $ <%= product.price %>
+          </p>
+          <p class="show-product-info">
+            <span>Condition:</span> <%= product.condition %>
+          </p>
+          <p class="show-product-info">
+            Seller:
+            <a href="/users/<%= product.user.id %>">
+              &MediumSpace;<%= product.user.userName %>
+            </a>
+          </p>
+
+          <p class="show-product-info">
+            <span>Location: </span><%= product.user.location %>
+          </p>
+          <!-- Google Maps Embedded API -->
+          <iframe
+          class="show-product-map"
+            frameborder="0"
+            style="border: 0"
+            src="https://www.google.com/maps/embed/v1/place?key=<%= api %> 
+          &q=<%= product.user.location %>"
+            allowfullscreen
+          >
+          </iframe>
+          <div class="edit-delete-btn">
+            <form
+              class="show-product-delete"
+              action="/products/<%= product.id %>?_method=DELETE"
+              method="POST"
+            >
+              <input class="btn" type="submit" value="Delete" />
+            </form>
+            <form
+              class="show-product-edit"
+              action="/products/<%= product.id %>/edit"
+              method="GET"
+            >
+              <input class="btn" type="submit" value="Update" />
+            </form>
+          </div>
         </div>
-    
-        <img class="product-image mt-5" src="<%= product.image %>" alt="" />
-        <p class="product-text">Condition: <%= product.condition %> </p>
-
-        <form class="show-product-form" action="/products/<%= product.id %>?_method=DELETE" method="POST">
-          <input class="btn mr-2 mt-5" type="submit" value="Delete">
-        </form>
-
-        <form class="show-product-form" action="/products/<%= product.id %>/edit" method="GET">
-          <input class="btn mt-5" type="submit" value="Update">
-        </form>
+        <div class="col-md-4 p-3">
+          <img
+            class="img-fluid show-product-img"
+            src="<%= product.image %>"
+            alt=""
+          />
+        </div>
       </div>
 
-      <div class="col-6 justify-content-center text-center">
-        <p class="location product-text">Location: <%= product.user.location %> </p>
-        <iframe
-          class="show-map"
-          frameborder="0" style="border:0"
-          src="https://www.google.com/maps/embed/v1/place?key=<%= api %> 
-            &q=<%= product.user.location %>" allowfullscreen>
-        </iframe>
-      </div>
-
+      <div class="push"></div>
     </main>
 
-    <%- include('../partials/footer') %> 
+    <%- include('../partials/footer') %>
   </body>
 </html>
