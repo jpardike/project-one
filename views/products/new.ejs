@@ -7,43 +7,50 @@
     <!-- p-new CSS -->
     <link rel="stylesheet" href="/styles/p-new.css">
   </head>
-  <body>
+  <body class="container-fluid p-0 m-0">
     <%- include('../partials/navbar') %>
 
-    <header class="row justify-content-center">
-      <h1> List An Item </h1>
-    </header>
-
-
-    <form class="p-new-box" action="/products" method="POST">
-      <div>
-        <select class="select-box mt-3 mb-3" name="user">
-          <% users.forEach((user) => { %>
-          <option value="<%= user.id %>"><%= user.name %></option>
-          <% }) %>
-        </select>
-        <label for="type">For Sale: </label>
-        <input class="text-input" id="type" name="type" type="text"></input>
+    <main>
+      <div class="row p-0 m-0 justify-content-center">
+        <h1 class="new-product-h1"> List An Item </h1>
       </div>
 
-      <div>
-        <label for="price">Price: </label>
-        <input class="text-input" id="price" name="price" type="text"></input>
-      </div>
+      <section class="row p-0 m-0 justify-content-center">
+        <form class="new-product-form" action="/products" method="POST">
+          <div>
+            <select class="form-control" name="user">
+              <% users.forEach((user) => { %>
+              <option value="<%= user.id %>"><%= user.name %></option>
+              <% }) %>
+            </select>
+            <label for="type">For Sale: </label>
+            <input class="text-input" id="type" name="type" type="text"></input>
+          </div>
+    
+          <div>
+            <label for="price">Price: </label>
+            <input class="text-input" id="price" name="price" type="text"></input>
+          </div>
+    
+          <div>
+            <label for="condition">Condition: </label>
+            <input class="text-input" id="condition" name="condition" type="text"></input>
+          </div>
+    
+          <div>
+            <label for="image">Image: </label>
+            <input class="text-input" id="image" name="image" type="text"></input>
+          </div>
+    
+          <button class="btn new-product-submit" type="submit">Create</button>
+    
+        </form>
+      </section>
+      <div class="push"></div>
+    </main>
 
-      <div>
-        <label for="condition">Condition: </label>
-        <input class="text-input" id="condition" name="condition" type="text"></input>
-      </div>
 
-      <div>
-        <label for="image">Image: </label>
-        <input class="text-input" id="image" name="image" type="text"></input>
-      </div>
-
-      <button class="btn mt-3" type="submit">Create</button>
-
-    </form>
+    
 
     <%- include('../partials/footer') %> 
   

@@ -1,0 +1,16 @@
+.new-product-h1 {
+  margin: 100px auto;
+}
+
+.new-product-form {
+  width: 50%;
+}
+
+.new-product-submit {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.new-product-submit:hover {
+  font-size: 1.1em;
+}
